@@ -1,0 +1,9 @@
+def gen_divisible(n): 
+    for i in range(0,n+1): 
+        if i%3==0 and i%4==0: 
+            yield i 
+
+n = int(input()) 
+div = gen_divisible(n)
+for num in div: 
+    print(num)
