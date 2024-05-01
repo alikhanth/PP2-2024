@@ -86,11 +86,11 @@ class Snake:
                 BLOCK_SIZE,
             )
         )
-        # Draw the body of the snake in blue
+        # Draw the body of the snake in black
         for body in self.points[1:]:
             pygame.draw.rect(
                 SCREEN,
-                BLUE,
+                BLACK,
                 pygame.Rect(
                     body.x * BLOCK_SIZE,
                     body.y * BLOCK_SIZE,
@@ -150,7 +150,7 @@ def main():
 
     # Main game loop
     while running:
-        SCREEN.fill(BLACK)
+        SCREEN.fill(BLUE)
 
         # Event handling loop
         for event in pygame.event.get():

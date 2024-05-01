@@ -41,7 +41,7 @@ background = pygame.image.load("AnimatedStreet.png")
 # Create the display surface
 DISPLAYSURF = pygame.display.set_mode((400, 600))
 DISPLAYSURF.fill(WHITE)
-pygame.display.set_caption("Game")
+pygame.display.set_caption("Racer 2")
 
 
 # Enemy class
@@ -155,7 +155,7 @@ while True:
 
     # Display current speed
     font = pygame.font.SysFont('Bauhaus 93', 20)
-    text = font.render('Speed: ' + str(SPEED - 4), True, BLACK)
+    text = font.render('Level: ' + str(SPEED - 4), True, BLACK)
     DISPLAYSURF.blit(text, (SCREEN_WIDTH - 140, 10))
 
     # Check for collision between player and enemies

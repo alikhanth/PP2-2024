@@ -194,7 +194,7 @@ def main():
             food.location.y = random.randint(0, HEIGHT // BLOCK_SIZE - 1)
 
         current_time = pygame.time.get_ticks()
-        if current_time - last_food_time >= 10000:
+        if current_time - last_food_time >= 12345:
             food = Food.generate_new_food(Food)
             last_food_time = current_time 
             
